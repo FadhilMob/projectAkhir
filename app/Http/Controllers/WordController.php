@@ -21,7 +21,7 @@ $phpWord->setValues([
     'alamat' => $alamat
 ]);
 
-// Saving the document as HTML file...
+// Saving the document as Word file...
 $phpWord->saveAs('hasilEdit.docx');
 
 /* Note: we skip RTF, because it's not XML-based and requires a different example. */

@@ -35,9 +35,16 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/laporan/create">
             <i class="fas fa-fw fa-cog"></i>
             <span>LAPORAN</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/laporan">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>DRAFT</span>
         </a>
     </li>
 

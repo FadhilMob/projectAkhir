@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WordController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\ArsipController;
 use App\Http\Controllers\RhkController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\WordController;
+use App\Http\Controllers\ArsipController;
+use App\Http\Controllers\LaporanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::get('word', function () {
 });
 
 Route::post('word', [WordController::class, 'index'])->name('word.index');
+Route::post('laporan', [LaporanController::class, 'index'])->name('laporan.index');
 
 Auth::routes();
 

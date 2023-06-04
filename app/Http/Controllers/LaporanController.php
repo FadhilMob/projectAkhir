@@ -10,9 +10,27 @@ class LaporanController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('laporan.index');
+        $nama = $request->nama;
+        $alamat = $request->alamat;
+
+        // Creating the new document...
+        $phpWord = new \PhpOffice\PhpWord\TemplateProcessor('myword.docx');
+
+        // Edit String
+        $phpWord->setValues([
+            'nama' => $nama,
+            'alamat' => $alamat
+        ]);
+
+        // Saving the document as Word file...
+        $phpWord->saveAs('hasilEdit.docx');
+
+        $laporan = LaporanModel::all();
+        return view('word',[
+            'laporan'=>$laporan
+        ]);
     }
 
     /**
@@ -20,7 +38,7 @@ class LaporanController extends Controller
      */
     public function create()
     {
-        //
+        return view('laporan.create');
     }
 
     /**
@@ -28,9 +46,14 @@ class LaporanController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        // $data = $this->validate($request,[
+        // 'nama' => 'required',
+        // 'alamat' => 'required',
+        // ]);
 
+        LaporanModel::create($request->all());
+        return redirect()->route('laporan.index')->with('success', 'Data berhasil disimpan');
+    }
     /**
      * Display the specified resource.
      */

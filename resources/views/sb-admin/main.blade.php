@@ -1,12 +1,12 @@
 @extends('sb-admin.index')
 
 @section('title')
-    E-OPOIKI
+    E-
 @endsection
 @section('content')
     <!-- Begin Page Content -->
     <div class="container-fluid">
-        <h1>SELAMAT DATANG DI E-OPOIKI</h1>
+        <h1>SELAMAT DATANG</h1>
         <p class="mb-10"></p>
 
         <!-- CARD COUNT BUKU -->
@@ -36,13 +36,13 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                <div class="text-xl-center font-weight-bold text-danger text-uppercase mb-1">
                                     LAPORAN BELUM</div>
-                                <div class="h3 mb-0 font-weight-bold text-gray-800">51</div>
+                                <center><div class="h3 mb-0 font-weight-bold text-gray-800">51</div></center>
                             </div>
-                            <div class="col-auto">
+                            {{-- <div class="col-auto">
                                 <i class="bi bi-book fa-2x text-gray-300"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -54,17 +54,17 @@
             <p class="mb-4 d-block">
             <!-- COUNT JUMLAH RHK -->
             <div class="col-xl-6 col-md-6 mb-6">
-                <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card border-bottom-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary    text-uppercase mb-1">
+                                <div class="text-xl-center font-weight-bold text-primary text-uppercase mb-1">
                                     JUMLAH RHK</div>
-                                <div class="h3 mb-0 font-weight-bold text-gray-800">51</div>
+                                <center><div class="h3 mb-0 font-weight-bold text-gray-800">51</div></center>
                             </div>
-                            <div class="col-auto">
+                            {{-- <div class="col-auto">
                                 <i class="bi bi-book fa-2x text-gray-300"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -72,17 +72,17 @@
 
              <!-- COUNT ARSIP -->
             <div class="col-xl- col-md-6 mb-6">
-                <div class="card border border-info shadow h-100 py-2">
+                <div class="card border-bottom-info shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                <div class="text-xl-center font-weight-bold text-info text-uppercase mb-1">
                                     JUMLAH ARSIP</div>
-                                <div class="h3 mb-0 font-weight-bold text-gray-800">51</div>
+                                <center><div class="h3 mb-0 font-weight-bold text-gray-800">51</div></center>
                             </div>
-                            <div class="col-auto">
+                            {{-- <div class="col-auto">
                                 <i class="bi bi-book fa-2x text-gray-300"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

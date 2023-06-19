@@ -10,8 +10,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --hijau: #acf538;
-    --dlh:#A4C53B;
+    --smart: #20323E;
+    --pekan: #EDEFE0;
+    --kuning: #FFC121;
+    --biru: #0B004E;
+    --hijau: #BED600;
+    --dlh: #20323E;
     --blue: #4e73df;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -7028,8 +7032,9 @@ a.close.disabled {
 }
 
 .bg-gray {
-    background-color: #858796!important
+    background-color: #858796 !important
 }
+
 a.bg-primary:focus,
 a.bg-primary:hover,
 button.bg-primary:focus,
@@ -7053,7 +7058,31 @@ button.bg-secondary:hover {
 }
 
 .bg-hijau {
-    background-color: #A4C53B !important;
+    background-color: #BED600 !important;
+}
+
+.bg-dlh {
+    background-color: #20323E !important;
+}
+
+.bg-smart {
+    background-color: #20323E !important;
+}
+
+.bg-pekan {
+    background-color: #EDEFE0 !important;
+}
+
+.bg-kuning {
+    background-color: #FFC121 !important
+}
+
+.bg-biru {
+    background-color: #0B004E !important
+}
+
+.bg-light {
+    background-color: #f8f9fc !important
 }
 
 a.bg-success:focus,

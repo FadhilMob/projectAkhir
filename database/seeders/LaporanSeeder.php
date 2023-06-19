@@ -17,8 +17,19 @@ class LaporanSeeder extends Seeder
     {
         DB::table('laporan')->insert([
             'id'=> '1',
-            'nama' => 'KAMU NANYA',
-            'alamat' => 'JALANIN AJA'
+            'judul' => 'Pengawasan Lingkungan Lamp',
+            'latar_belakang' => 'JALANIN AJA',
+            'dasar_hukum' => 'Didasari Oleh',
+            'dasar_pelaksanaan' => 'ff',
+            'waktu_pelaksanaan' => 'sf',
+            'hari' => '2023-6-2',
+            'pukul1' => '',
+            'pukul2' => '',
+            'tempat' => 'Jl Konoha',
+            'peserta' => 'Naruto - Sasuke',
+            'tujuan' => 'Gelar Hokage',
+            'identifikasi_masalah' => 'Membuat Konoha ',
+            'dokumentasi' => '',
         ]);
     }
 }

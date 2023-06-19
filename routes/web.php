@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RhkController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\WordController;
 use App\Http\Controllers\ArsipController;
 use App\Http\Controllers\LaporanController;
 
@@ -21,15 +20,16 @@ use App\Http\Controllers\LaporanController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/w', function () {
+    return view('w');
+});
 Route::get('/dashboard', function () {
     return view('sb-admin.main');
 });
-Route::get('word', function () {
-    return view('word');
-});
 
-Route::post('word', [WordController::class, 'index'])->name('word.index');
 Route::post('laporan', [LaporanController::class, 'index'])->name('laporan.index');
+Route::get('/create-pdf', [LaporanController::class, 'createPDF'])->name('create-pdf');
+Route::get('/laporan/{id}/report', [LaporanController::class, 'report'])->name('report');
 
 Auth::routes();
 
@@ -39,3 +39,4 @@ Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->n
 Route::resource('rhk', RhkController::class);
 Route::resource('arsip', ArsipController::class);
 Route::resource('laporan', LaporanController::class);
+

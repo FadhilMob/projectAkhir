@@ -10,7 +10,19 @@ class LaporanModel extends Model
     use HasFactory;
     protected $table = 'laporan';
     protected $fillable = [
-        'nama',
-        'alamat'
+        'judul',
+        'latar_belakang',
+        'dasar_hukum',
+        'dasar_pelaksanaan',
+        'waktu_pelaksanaan',
+        'hari',
+        'pukul1',
+        'pukul2',
+        'tempat',
+        'peserta',
+        'tujuan',
+        'identifikasi_masalah',
+        'dokumentasi',
+        'role'
     ];
 }
